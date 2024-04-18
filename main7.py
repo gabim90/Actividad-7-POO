@@ -53,3 +53,12 @@ if __name__== '__main__':
 
     def acumular(self,dias,farmacias,importe):
       self.__ventas[dias][farmacias]+=importe
+
+
+
+
+from GestorVenta import GestorVenta
+
+if __name__=='__main__':
+    g=GestorVenta()
+    s=int(input('Ingrese'))
