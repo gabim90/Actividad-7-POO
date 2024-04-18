@@ -30,3 +30,26 @@ if __name__== '__main__':
             elif opc == '5':
                 lista.compararMillas()
         print('Fin del progama')
+
+
+
+
+
+
+
+
+
+ class GestorVenta:
+    __cantdias=7
+    __ventas=[]
+    __cantfarmacias=5
+    def __init__(self,dias,farmacias):
+      self.__cantdias=dias
+      self.__ventas=[]
+      self.__cantfarmacias=farmacias
+
+      for i in range(farmacias):
+        self.__ventas.append([0]*dias)
+
+    def acumular(self,dias,farmacias,importe):
+      self.__ventas[dias][farmacias]+=importe
